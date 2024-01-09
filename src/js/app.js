@@ -1,5 +1,3 @@
-console.log("hi");
-
 const allQuestionEls = document.querySelectorAll(".faq-accordion__subtitle");
 
 const toggleAnswer = (e) => {
