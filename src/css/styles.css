@@ -1,0 +1,129 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-pink: hsl(275, 100%, 97%);
+
+    --clr-pink: hsl(281, 83%, 54%);
+    --clr-grayish-purple: hsl(292, 16%, 49%);
+    --clr-dark-purple: hsl(292, 42%, 14%);
+    --ff-primary: 'Work Sans', sans-serif;
+
+    --fw-normal: 400;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-primary);
+    color: var(--clr-dark-purple);
+    background-color: var(--clr-light-pink);
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    height: 40%;
+    z-index: 0;
+    background: url(../assets/images/background-pattern-mobile.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 40em) {
+    body::before {
+        background: url(../assets/images/background-pattern-desktop.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: 1em;
+    width: min(95%, 40rem);
+    background-color: var(--clr-white);
+}
+
+.faq-accordion__header,
+.faq-accordion__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-accordion__title {
+    font-size: 3rem;
+    margin-inline: .5em auto;
+    font-weight: var(--fw-bolder);
+}
+
+.wrapper {
+    padding-block-end: 1em;
+    border-bottom: 1px solid var(--clr-light-pink);
+    margin-block: 1em;
+}
+
+.faq-accordion__subtitle {
+    font-size: 1.2rem;
+    margin-block-end: .75em;
+    transition: color .35s ease;
+}
+
+.faq-accordion__subtitle:hover {
+    cursor: pointer;
+    color: var(--clr-pink);
+}
+
+.icon-minus {
+    display: none;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon.toggle {
+    display: block;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.faq-accordion__answer {
+    display: none;
+    line-height: 1.5;
+    font-weight: var(--fw-bold);
+    color: var(--clr-grayish-purple);
+}
+
+.faq-accordion__answer.show {
+    display: block;
+}
