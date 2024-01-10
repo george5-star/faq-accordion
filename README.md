@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Project Screenshot](./src/assets/images/faq-accordion.png)
 
 ## My process
 
@@ -37,10 +37,14 @@ Users should be able to:
 
 ### What I learned
 
+I learned about DOM manipulations.
+
 ### Continued development
+
+Animations
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [George Asiedu](https://www.georgeasiedu.tech)
+- Frontend Mentor - [@george5-star](https://www.frontendmentor.io/profile/george5-star)
+- Twitter - [@george5_star](https://www.twitter.com/george5_star)
